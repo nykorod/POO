@@ -1,0 +1,29 @@
+def abrirConta(t):
+     setStatus(True)
+     if t == 'cc':
+          setSaldo(50)
+     if t == 'cp':
+          setSaldo(150)
+
+def fecharConta():
+     if saldo != 0 or status == False:
+          return 'erro ao fechar conta'
+     else:
+          setStatus(False)
+
+def depositar(dinheiro):
+     if status == True:
+          setSaldo(setSaldo() + dinheiro)
+
+def sacar(dinheiro):
+     if setStatus(True) and setSaldo() > dinheiro:
+          setSaldo(setSaldo() - dinheiro)
+
+def mensal():
+     v=0
+     if setTipo('cc'):
+          v=12
+     if setTipo('cp'):
+          v=20
+     if setStatus and setSaldo() > v:
+          setSaldo(setSaldo() - v)

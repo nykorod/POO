@@ -1,0 +1,65 @@
+objetos no POO é tudo que tem CARATERÍSTICAS, COMPORTAMENTOS e ESTADO ATUAL
+um alarme é um objeto pq tem características (se é importante, é de viagem, etc), comportamentos (pode ser desmarcado), e estado atual (esta marcado)
+
+EX:
+canetas (azul, vermelha, preta e verde)
+caneta é objeto?:  sim, pois tem características comportamentos e estado atual
+a caneta tem um molde, uma base e isso é chamada de classe
+
+coisas que eu tenho: (atributos)
+     modelo(str)
+     cor(str)
+     ponta(int)
+     carga(float) 
+     tampada(true ou false)
+
+coisas que eu faço: (métodos)
+     escrever()
+     pintar()
+     tampar()
+     destampar()
+
+como estou agora: (estado)
+     destampado 
+     azul
+     90% de carga
+
+instanciar é quando eu consigo gerar um objeto através de uma classe 
+c1 = nova caneta
+c1.cor = azul
+c1.ponta = 0.5
+c1.desenhar()
+
+c2 = nova caneta
+c2.cor = vermelha
+
+c1 é diferente de c2, mas são da mesma classe, as duas são canetas
+
+abstração é quando voce consegue ignorar alguns atributos do objeto, focando apenas no importante
+
+
+
+fone 
+atributos:
+capa_azul
+preto
+luz_azul
+luz_vermelha
+fone
+carga
+carregador
+
+método:
+jogar()
+abrir()
+fechar()
+tirar_fone()
+botar_fone()
+carregar()
+
+estado:
+capa_azul
+preto
+fone
+50% de carga
+

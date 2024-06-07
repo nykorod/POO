@@ -1,0 +1,31 @@
+uma classe pode ser mostrado como um retângulo com 2 linhas, separando o nome, atributos e método
+
+EX:
+     Caneta
+----------------
+- modelo
++ cor
+- ponta
+# carga
+- tampada
+----------------
++ escrever()
+# pintar()
+- tampar()
+- destampar()
+
+visibilidade indica quanto voce tem acesso ao atributo e método de uma classe
+
+'+' - publico
+'-' - privado
+'#' - protegido
+
+imagine 
+'+' como um orelhão q qualquer um pode usar
+(qualquer classe pode modificar)
+
+'-' como seu celular
+(somente a classe atual pode modificar)
+
+'#' como um celular que apenas a familia pode usar (mae e filhos)
+(as subclasses dessa classe podem modificar)

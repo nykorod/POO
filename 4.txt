@@ -1,0 +1,77 @@
+     Ventilador
+--------------------
+botão
+hélice
+eletronica
+cabo
+protetor
+botão2
+preto
+sujo
+--------------------
+ligar1()
+ligar2()
+ligar3()
+rodar()
+parado()
+conectar()
+desconectar()
+
+     Animal
+----------------
+raça
+especie
+alimentação
+patas
+habitat
+predadores
+familia
+reino
+proteção
+----------------
+andar()
+comer()
+dormir()
+reproduzir()
+caçar()
+fugir()
+correr()
+
+metodos acessores (getters)
+ele pega algo dentro do objeto, sem que voce tenha acesso a tudo
+(ex: quando voce da dinheiro pro atendente e ele guarda o dinheiro no caixa ou quando voce quer acessar sua conta bancaria, ele PEGA para voce)
+
+metodos modificadores (setters)
+ele modifica algo dentro do objeto, sem deixar a pessoa mexer diretamente no atributo
+
+     Caneta
+----------------
+- modelo(str)
++ cor(str)
+----------------
++ get modelo()
+     return modelo
++ set modelo(m:str)
+     modelo = m
++ get cor()
+     return cor
++ set cor(c:str)
+     cor = c
+
+método construtor (construct)
+ele automaticamente faz  algo sem precisar que o usuario peça nada
+
+     Caneta
+----------------
+...
+----------------
+...
+construct
+     (m:str,
+     p:int,
+     c:str)
+set modelo(m)
+ser ponta(p)
+set cor(c)
+
+c1= nova caneta ('bic', 0.5, 'azul')

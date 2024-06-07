@@ -1,0 +1,79 @@
+     Lutador
+-----------------
+- nome
+- nacionalidade
+- idade
+- altura
+- peso
+- categoria
+- vitorias
+- empates
+- derrotas 
+-----------------
++ apresentação()
+     return Atributos
++ status()
+     return nome, altura, categoria
++ ganhar()
+     return setVitorias(setVitorias() + 1)
++ empatar()
+     return setEmpate(setEmpate() + 1)
++ perder()
+     return setDerrotas(setDerrotas() + 1)
+
+construct
+     conecta todos os atributos com o construct para  criar objetos mais facil
+     (EX: nome = no, idade = id)
+     (l[1] = novo lutador ('nycolas', 17))
+
+     if setPeso() <= 52.2:
+          return 'invalido'
+     elif setPeso() <= 70.3:
+          setCategoria('leve')
+     elif setPeso() <= 83.9:
+          setCategoria('medio')
+     elif setPeso() <= 120.2:
+          setCategoria('pesado')
+     else:
+          return 'invalido'
+
+PRECISA de uma classe para ter um objeto
+
+     LUTA
+--------------
+- desafiante(lutador)
+- desafiado(lutador)
+- rounds(int)
+- aprovada(logico)
+--------------
+marcarLuta(l1, l2: lutador)
+  if l1.getPeso() ==  l2.getPeso() and l1 != l2:
+    setAprovada(true)
+    setDesafiante = l1
+    setDesafiado = l2
+
+lutar()
+ if setAprovada:
+  l1.apresentar()
+  l2.apresentar()
+
+  if l1 ganhar:
+    l1.ganhar()
+    l2.perder()
+
+  elif l2 ganhar:
+    l2.ganhar()
+    l1.perder()
+
+  elif empate:
+    l1.empate()
+    l2.empate()
+
+
+
+agregação é quando uma classe ta conectada com outra, é simbolizado por uma linha e losango na ponta
+tbm tem um papel(nome) que conecta eles e um sentido (seta preta)
+(no caso da luta seria 'disputa =>') =>> === === === === === === === <<=
+multiplicidade é a quantidade minima que uma classe pode acontecer sem a outra
+(um lutador pode ter de 0 a varias lutas, ent o multiplicativo é de 0..*, a quantidade
+ de lutadores que precisam ter em uma luta é de 1, ent bota só *)

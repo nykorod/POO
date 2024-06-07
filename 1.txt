@@ -1,0 +1,10 @@
+COMERNada
+
+C - confiavel: para modificar um objeto em especifico vc n precisa alterar nenhuma outra parte
+O - oportuno: se repartir algo em varios objetos, pode desenvolver em pararelo/separadamente
+M - manutenivel: atualizar um software é facil, uma pequena mudança vai melhorar todas as partes q usarem o objeto
+E - extensivel:  ele n é estatico, vc pode importar o objeto para outro lugar e ele vai poder tendo mais funcoes
+R - reutilizavel: pode ser usado para varias coisas se as definicoes  forem parecidas
+N - natural: ele é mais facil de entender, vc se preocupa mais com a funcionalidade que nos detalhes de implementacao
+ada
+

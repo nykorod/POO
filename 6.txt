@@ -1,0 +1,63 @@
+pilares do POO:
+EHP
+Encapsulamento
+Herança
+Polimorfismo
+
+     ENCAPSULAMENTO
+ocultar partes isoladas do objeto, podendo fazer partes que o exterior n possa ver
+(ao comprar uma pilha, a gente so ve a parte de fora, a parte de dentro é protegida,
+ tanto de mim para pilha, quanto da pilha pra mim, essa parte interna ta 'encapsulada')
+o Usuario pode interagir com o objeto encapsulado e o objeto vai responder, sem precisar do Usuario entender ou mexer internamente no objeto
+
+interface é como o objeto se mostra para o Usuario
+
+     VANTAGENS
+torna mudanças invisíveis
+(pilha pode ficar sem energia e ser trocada por outra pilha semelhante(mesma interface) que o controle remoto vai funcionar)
+
+fácil reutilização de código
+(pode trocar a pilha por varias outras, pois tem encapsulamento aprofundado, o celular nao tem isso, por isso troca de baterias dificilmente funcionam)
+
+reduzir efeitos colaterais
+(ao deixar o interior do objeto protegido, ele reduz as chances do Usuario se ferir, de ter mudanças inesperadas no objeto, do objeto parar de funcionar)
+
+metodo abstrato é previsto mas n implementado
+
+interface
+     Controlador
+---------------------
++ ligar()
++ desligar()
++ play()
++ pause()
++ mudo()
++ desmudo()
+
+     ControleRemoto
+------------------------
+- volume
+- ligado
+- tocando
+------------------------
++ ligar()
+     setLigado(True)
++ desligar()
+     setLigado(False)
++ play()
+     if setLigado and not setTocando():
+          setTocando(True)
++ pause()
+     if setLigado and setTocando():
+          setTocando(True)
++ mudo()
+     if setLigado and setVolume() > 0:     
+          setVolume(0)
++ desmudo()
+     if setLigado and setVolume() = 0:
+          setVolume(50)
++ menuOn
+
++ menuOff
+for c in range(0,volume,10)
+     print('I')
